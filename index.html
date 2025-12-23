@@ -130,17 +130,24 @@
             </fieldset>
             <fieldset>
                 <legend>Opinião</legend>
-                <!-- OPNIÃO -->
+                <!-- OPINIÃO -->
 
-                <label for="satisfactionScale">Escala de satisfação</label>
-                <select name="userSatisfactionScale" id="satisfactionScale">
-                    <option value="otima">Ótima</option>
-                    <option value="boa">Boa</option>
-                    <option value="regular">Regular</option>
-                    <option value="ruim">Ruim</option>
-                </select>
+                <p>O que você acha da qualidade do nosso serviço?</p>
+                <input type="radio" name="userSatisfactionScale" id="otima">
+                <label for="otima">Ótima</label>
                 <br>
-                <label for="commentOpen">Comentário</label>
+                <input type="radio" name="userSatisfactionScale" id="boa">
+                <label for="boa">Boa</label>
+                <br>
+                <input type="radio" name="userSatisfactionScale" id="regular">
+                <label for="regular">Regular</label>
+                <br>
+                <input type="radio" name="userSatisfactionScale" id="ruim">
+                <label for="ruim">Ruim</label>
+
+                
+                <br>
+                <label for="commentOpen">Esqueva sua opinião</label>
                 <textarea name="userCommentOpen" id="commentOpen" placeholder="Comente aqui">           
                 </textarea>                
             </fieldset>
