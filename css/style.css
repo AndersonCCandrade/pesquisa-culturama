@@ -31,6 +31,7 @@ form{
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset{    
@@ -75,4 +76,46 @@ input[type="checkbox"]{
 input[type="color"]{
     width: 40px;
     padding: 0 5px;    
+}
+
+input[type="text"]:invalid,
+input[type="number"]:invalid, 
+input[type="email"]:invalid,
+#states:invalid{
+    border-color: red;
+}
+
+input[type="text"]:valid,
+input[type="number"]:valid, 
+input[type="email"]:valid, 
+#states:valid{
+    border-color: green;
+}
+
+input[type="checkbox"]:invalid{
+    outline: 1px solid red
+}
+
+input[type="checkbox"]:valid{
+    outline: 1px solid green
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 10px 10px 0;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #ffffff;
 }
